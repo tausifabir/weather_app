@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_glow/flutter_glow.dart';
 
-
 import 'extra_weather.dart';
 import 'model/dataset.dart';
 
@@ -52,7 +51,7 @@ class TomorrowWeather extends StatelessWidget {
                     Text(
                       " 7 days",
                       style:
-                      TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
@@ -126,7 +125,7 @@ class TomorrowWeather extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
-                ExtraWeather(tomorrowTemp)
+                // ExtraWeather(tomorrowTemp)
               ],
             ),
           )
@@ -148,7 +147,13 @@ class SevenDays extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(sevenDay[index].day.toString(), style: TextStyle(fontSize: 20,color:Colors.white,),),
+                    Text(
+                      sevenDay[index].day.toString(),
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
                     Container(
                       width: 135,
                       child: Row(
@@ -161,7 +166,10 @@ class SevenDays extends StatelessWidget {
                           SizedBox(width: 15),
                           Text(
                             sevenDay[index].name.toString(),
-                            style: TextStyle(fontSize: 20,color:Colors.white,),
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
                           )
                         ],
                       ),
@@ -170,7 +178,10 @@ class SevenDays extends StatelessWidget {
                       children: [
                         Text(
                           "+" + sevenDay[index].max.toString() + "\u00B0",
-                          style: TextStyle(fontSize: 20,color:Colors.white,),
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                          ),
                         ),
                         SizedBox(
                           width: 5,

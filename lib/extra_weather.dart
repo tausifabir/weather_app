@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'model/dataset.dart';
 
-
-
-
 class ExtraWeather extends StatelessWidget {
-  final Weather temp;
-  ExtraWeather(this.temp);
+  final String wind;
+  final String humidity;
+  final String pressure;
+  const ExtraWeather(this.wind, this.humidity, this.pressure);
+  //final WeatherDemmyData temp;
+  //ExtraWeather(this.temp);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class ExtraWeather extends StatelessWidget {
               height: 10,
             ),
             Text(
-              temp.wind.toString() + " Km/h",
+              wind.toString() + " Km/h",
               style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
             ),
             SizedBox(
@@ -47,7 +47,7 @@ class ExtraWeather extends StatelessWidget {
               height: 10,
             ),
             Text(
-              temp.humidity.toString() + " %",
+              humidity.toString() + " %",
               style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
             ),
             SizedBox(
@@ -69,14 +69,14 @@ class ExtraWeather extends StatelessWidget {
               height: 10,
             ),
             Text(
-              temp.chanceRain.toString() + " %",
+              pressure.toString() + " %",
               style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
             ),
             SizedBox(
               height: 10,
             ),
             Text(
-              "Rain",
+              "Pressure",
               style: TextStyle(color: Colors.black54, fontSize: 16),
             )
           ],

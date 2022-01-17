@@ -1,4 +1,4 @@
-class Weather {
+class WeatherDemmyData {
   final int? max;
   final int? min;
   final int? current;
@@ -11,7 +11,7 @@ class Weather {
   final String? time;
   final String? location;
 
-  Weather(
+  WeatherDemmyData(
       {this.max,
       this.min,
       this.name,
@@ -25,14 +25,14 @@ class Weather {
       this.location});
 }
 
-List<Weather> todayWeather = [
-  Weather(current: 23, image: "assets/rainy_2d.png", time: "10:00"),
-  Weather(current: 21, image: "assets/thunder_2d.png", time: "11:00"),
-  Weather(current: 22, image: "assets/rainy_2d.png", time: "12:00"),
-  Weather(current: 19, image: "assets/snow_2d.png", time: "01:00")
+List<WeatherDemmyData> todayWeather = [
+  WeatherDemmyData(current: 23, image: "assets/rainy_2d.png", time: "10:00"),
+  WeatherDemmyData(current: 21, image: "assets/thunder_2d.png", time: "11:00"),
+  WeatherDemmyData(current: 22, image: "assets/rainy_2d.png", time: "12:00"),
+  WeatherDemmyData(current: 19, image: "assets/snow_2d.png", time: "01:00")
 ];
 
-Weather currentTemp = Weather(
+WeatherDemmyData currentTemp = WeatherDemmyData(
     current: 21,
     image: "assets/thunder.png",
     name: "Thunderstorm",
@@ -42,7 +42,7 @@ Weather currentTemp = Weather(
     chanceRain: 87,
     location: "Minsk");
 
-Weather tomorrowTemp = Weather(
+WeatherDemmyData tomorrowTemp = WeatherDemmyData(
   max: 20,
   min: 17,
   image: "assets/sunny.png",
@@ -52,40 +52,40 @@ Weather tomorrowTemp = Weather(
   chanceRain: 20,
 );
 
-List<Weather> sevenDay = [
-  Weather(
+List<WeatherDemmyData> sevenDay = [
+  WeatherDemmyData(
       max: 20,
       min: 14,
       image: "assets/rainy_2d.png",
       day: "Mon",
       name: "Rainy"),
-  Weather(
+  WeatherDemmyData(
       max: 22,
       min: 16,
       image: "assets/thunder_2d.png",
       day: "Tue",
       name: "Thunder"),
-  Weather(
+  WeatherDemmyData(
       max: 19,
       min: 13,
       image: "assets/rainy_2d.png",
       day: "Wed",
       name: "Rainy"),
-  Weather(
+  WeatherDemmyData(
       max: 18, min: 12, image: "assets/snow_2d.png", day: "Thu", name: "Snow"),
-  Weather(
+  WeatherDemmyData(
       max: 23,
       min: 19,
       image: "assets/sunny_2d.png",
       day: "Fri",
       name: "Sunny"),
-  Weather(
+  WeatherDemmyData(
       max: 25,
       min: 17,
       image: "assets/rainy_2d.png",
       day: "Sat",
       name: "Rainy"),
-  Weather(
+  WeatherDemmyData(
       max: 21,
       min: 18,
       image: "assets/thunder_2d.png",
